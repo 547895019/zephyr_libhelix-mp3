@@ -6,6 +6,11 @@
 
 if(CONFIG_LIBHELIXMP3)
 zephyr_library_named(libhelix-mp3)
+
+zephyr_library_compile_options(
+	-O3 -std=gnu99 -ffast-math -Wno-array-bounds -Wall
+)
+
 zephyr_include_directories(
     libhelix-mp3/src/pub
 )
