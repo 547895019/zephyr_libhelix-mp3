@@ -1,0 +1,16 @@
+# Copyright (c) 2022 Bose Corporation
+# Copyright (c) 2024 Codecoup
+# SPDX-License-Identifier: Apache-2.0
+
+config ZEPHYR_LIBHELIXMP3_MODULE
+	bool
+
+config LIBHELIXMP3
+	bool "libhelix-mp3 Support"
+	help
+	  Enable the libhelix-mp3
+
+if LIBHELIXMP3
+
+
+endif
